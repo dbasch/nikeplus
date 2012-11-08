@@ -4,7 +4,7 @@
 require 'tweetstream'
 require 'mongo'
 
-db = Mongo::Connection.new.db("nike2")
+db = Mongo::Connection.new.db("nike")
 coll = db.collection("tweets")
 
 TweetStream.configure do |config|
